@@ -1,0 +1,30 @@
+/* Sticky Header for WordPress */
+.site-header, .header, header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #ffffff; /* change as per your design */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional */
+}
+
+/* Optional: Make sure it doesn't overlap admin bar */
+.admin-bar .site-header,
+.admin-bar header {
+  top: 32px;
+}
+
+
+.main-header-menu .sub-menu .menu-link {
+    font-size: 14px;         /* adjust text size */
+    color: #333333;          /* text color */
+    padding: 12px 15px 12px 15px;       /* spacing inside each link */
+    background-color: #ffffff; /* submenu background */
+    border-bottom: 1px solid #f1f1f1; /* subtle divider */
+}
+
+/* Hover/Focus State */
+.main-header-menu .sub-menu .menu-link:hover,
+.main-header-menu .sub-menu .menu-link:focus {
+    color: #ffffff;          /* text color on hover */
+    background-color: #0073e6; /* highlight background */
+}
