@@ -1,0 +1,96 @@
+<div class="contact-form">
+  <h2>Order / Enquiry Form</h2>
+  
+  <label> Your Name
+    [text* your-name class:form-input placeholder "Enter your full name"]
+  </label>
+
+  <label> Mobile Number
+    [tel* your-mobile class:form-input placeholder "Enter your mobile number"]
+  </label>
+
+  <label> Your Email
+    [email* your-email class:form-input placeholder "Enter your email address"]
+  </label>
+
+  <label> Select Product
+    [select* your-product class:form-input include_blank "Premium Golden Rice" "Premium White Rice" "Special Basmati Rice" "Sona Choor Rice" "Jeera 32 Rice" "Kaala Namak Rice" "Govind Bhog Rice" "Kaveri Chintu Rice"]
+  </label>
+
+  <label> Your Message (optional)
+    [textarea your-message class:form-textarea placeholder "Type your message..."]
+  </label>
+
+  <div class="form-submit">
+    [submit class:btn-form "Send Request"]
+  </div>
+</div>
+
+<style>
+.contact-form {
+  max-width: 640px;
+  margin: 20px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 1.9rem;
+  color: #2d3748;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-input, .form-textarea, .wpcf7-select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.form-input:focus, .form-textarea:focus, .wpcf7-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59,130,246,0.4);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.btn-form {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.btn-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(99,102,241,0.35);
+}
+</style>
